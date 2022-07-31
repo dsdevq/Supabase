@@ -18,7 +18,7 @@
     <div class="header__small-container">
       <aside class="header__navigation">
         <a href="#" class="header__logo">
-          <img src="img/Logo.svg" alt="Logo">
+          <img src="img/logos/Logo.svg" alt="Logo">
         </a>
         <div class="header__burger">
           <span></span>
@@ -29,24 +29,24 @@
               <details class="menu__details details">
                 <summary class="details__summary">
                   <span>Product</span>
-                  <img src="img/Vector.svg" alt="Arrow">
+                  <img class="details__arrow" src="img/buttonIcons/arrow.svg" alt="Arrow">
                 </summary>
                 <!-- Details onClick -->
-                <p class="details__text">
+                <!-- <p class="details__text">
                   Products
-                </p>
+                </p> -->
               </details>
             </li>
-            <li class="menu__item">
+            <li class="menu__item" style="position: relative;">
               <details class="menu__details details">
                 <summary class="details__summary">
                   <span>Developers</span>
-                  <img src="img/Vector.svg" alt="Arrow">
+                  <img class="details__arrow" src="img/buttonIcons/arrow.svg" alt="Arrow">
                 </summary>
                 <!-- Details onClick -->
-                <p class="details__text">
+                <!-- <p class="details__text">
                   Developer
-                </p>
+                </p> -->
               </details>
             </li>
             <li class="menu__item">
@@ -70,11 +70,11 @@
   </div>
 </header> <main class="page">
   <!-- $ Store and serve any type of digital content -->
-  <section class="page__storage storage">
+  <div class="page__storage storage">
     <div class="storage__container">
       <aside class="storage__information">
         <div class="storage__label">
-          <img src="img/Frame1.svg" alt="Icon">
+          <img src="img/icons/Storage.svg" alt="Icon">
           <p>Storage</p>
         </div>
         <h2 class="storage__header">
@@ -91,21 +91,23 @@
           Start a project
         </button>
       </aside>
+      <!-- ? Image -->
       <picture class="storage__image">
-        <img src="img/big2.svg" alt="Image">
+        <img src="img/aside/big2.svg" alt="Image">
       </picture>
     </div>
-  </section>
-  <section class="page__indicators indicators">
+  </div>
+  <div class="page__indicators indicators">
     <div class="indicators__container">
       <div class="indicators__small-container">
         <article class="indicators__item indicator-item">
+          <!-- ? Images -->
           <div class="indicator-item__images">
-            <img src="img/Frame.svg" alt="Icon">
-            <img src="img/x.svg" alt="Icon">
-            <img src="img/Frame2.svg" alt="Icon">
-            <img src="img/x.svg" alt="Icon">
-            <img src="img/Frame3.svg" alt="Icon">
+            <img src="img/icons/Storage2.svg" alt="Icon">
+            <img src="img/icons/x.svg" alt="Icon">
+            <img src="img/icons/key.svg" alt="Icon">
+            <img src="img/icons/x.svg" alt="Icon">
+            <img src="img/icons/postgres.svg" alt="Icon">
           </div>
           <h3 class="indicator-item__heading">
             Interoperable
@@ -116,7 +118,7 @@
         </article>
         <article class="indicators__item indicator-item">
           <div class="indicator-item__images">
-            <img src="img/Frame4.svg" alt="Icon">
+            <img src="img/icons/internet.svg" alt="Icon">
           </div>
           <h3 class="indicator-item__heading">
             Lightning fast
@@ -127,7 +129,7 @@
         </article>
         <article class="indicators__item indicator-item">
           <div class="indicator-item__images">
-            <img src="img/Frame5.svg" alt="Icon">
+            <img src="img/icons/okay.svg" alt="Icon">
           </div>
           <h3 class="indicator-item__heading">
             Dependable
@@ -138,15 +140,15 @@
         </article>
       </div>
     </div>
-  </section>
+  </div>
   <!-- $ Sleek dashboard for managing your media -->
-  <section class="page__dashboard dashboard">
+  <div class="page__dashboard dashboard">
     <div class="dashboard__container">
-      <section class="dashboard__small-container">
+      <div class="dashboard__small-container">
         <article class="dashboard__heading dashboard-heading">
-          <h1 class="dashboard-heading__header">
+          <h2 class="dashboard-heading__header">
             Sleek dashboard for managing your media
-          </h1>
+          </h2>
           <div class="dashboard-heading__text">
             A complete Object Explorer so that any of your team can use.
           </div>
@@ -156,25 +158,25 @@
         </article>
         <article class="dashboard__file file">
           <div class="file__image">
-            <div class="file__buttons">
-              <button class="file__button active">
+            <div class="file-buttons__buttons file__buttons">
+              <button class="file-buttons__button file__button active">
                 File previews
               </button>
-              <button class="file__button">
+              <button class="file-buttons__button file__button">
                 Column view
               </button>
-              <button class="file__button">
+              <button class="file-buttons__button file__button">
                 List view
               </button>
-              <button class="file__button">
+              <button class="file-buttons__button file__button">
                 Multi select actions
               </button>
-              <button class="file__button">
+              <button class="file-buttons__button file__button">
                 Path navigator
               </button>
             </div>
             <picture class="file__picture">
-              <img src="img/big1.svg" alt="Image">
+              <img src="img/aside/big1.svg " alt="Image">
             </picture>
           </div>
           <div class="file__information file-information">
@@ -199,29 +201,29 @@
                 </div>
                 <footer class="file-profile__footer">
                   <span>Created by: </span>
-                  <img src="img/smallLogo.svg" alt="SmallLogo">
+                  <img src="img/logos/smallLogo.svg" alt="SmallLogo">
                   <span>supabase</span>
                 </footer>
               </div>
               <footer class="file-information__footer file-footer">
                 <p class="file-footer__text">
                   nextjs-ts-user-management
-                  <img src="img/github.svg" alt="Github">
+                  <img src="img/social/github.svg" alt="Github">
                 </p>
                 <button class="file-footer__button ">
-                  <img src="img/button.svg" alt="Button">
+                  <img src="img/buttonIcons/button.svg" alt="Button">
                 </button>
               </footer>
             </div>
           </div>
         </article>
-      </section>
+      </div>
     </div>
-  </section>
+  </div>
   <!-- $ Simple and convenient APIs -->
-  <section class="page__apis apis-supabase">
+  <div class="page__apis apis-supabase">
     <div class="apis-supabase__container">
-      <section class="apis-supabase__small-container">
+      <div class="apis-supabase__small-container">
         <article class="apis-supabase__information">
           <h2 class="apis-supabase__header">
             Simple and convenient <br>APIs
@@ -235,9 +237,10 @@
             coming soon!
           </p>
           <div class="apis-supabase__columns">
+            <!-- # Item -->
             <article class="apis-supabase__items items-column">
               <div class="items-column__image">
-                <img src="img/iconApi.svg" alt="Icon">
+                <img src="img/icons/iconApi.svg" alt="Icon">
               </div>
               <h3 class="items-column__heading">
                 CDN integration
@@ -249,9 +252,10 @@
                 Coming soon
               </button>
             </article>
+            <!-- # Item -->
             <article class="apis-supabase__items items-column">
               <div class="items-column__image">
-                <img src="img/iconApi1.svg" alt="Icon">
+                <img src="img/icons/iconApi1.svg" alt="Icon">
               </div>
               <h3 class="items-column__heading">
                 Auto transformation <br> & optimisation
@@ -265,7 +269,7 @@
             </article>
           </div>
         </article>
-        <acticle class="apis-supabase__file file-apis-supabase">
+        <div class="apis-supabase__file file-apis-supabase">
           <div class="file-apis-supabase__image file__image">
             <div class="file-apis-supabase__buttons file__buttons">
               <button class="file-apis-supabase__button file__button active">
@@ -284,18 +288,19 @@
                 Delete files
               </button>
             </div>
+            <!-- ? Image -->
             <picture class="file-apis-supabase__picture file__picture">
-              <img src="img/simpleAPI.svg" alt="Image">
+              <img src="img/aside/big3.svg" alt="Image">
             </picture>
           </div>
-        </acticle>
-      </section>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
   <!--$ Integrates natively with Supabase Auth -->
-  <section class="page__auth auth apis-supabase">
+  <div class="page__auth auth apis-supabase">
     <div class="auth__container apis-supabase__container">
-      <section class="auth__small-container apis-supabase__small-container">
+      <div class="auth__small-container apis-supabase__small-container">
         <article class="auth__information apis-supabase__information">
           <h2 class="auth__header apis-supabase__header">
             Integrates natively <br>
@@ -308,11 +313,11 @@
             functions, and even your own metadata to write policies.
           </p>
           <button class="auth__button">
-            <img src="img/button1.svg" alt="button">
+            <img src="img/buttonIcons/button1.svg" alt="button">
             <span>Expore documentation</span>
           </button>
         </article>
-        <acticle class="auth__file apis-supabase__file file-auth">
+        <div class="auth__file apis-supabase__file file-auth">
           <div class="file-auth__image file__image">
             <div class="file-auth__buttons file__buttons">
               <button class="file-auth__button file__button active">
@@ -325,16 +330,18 @@
                 Authenticated access to a bucket
               </button>
             </div>
+            <!-- ? Image -->
             <picture class="file-auth__picture file__picture">
-              <img src="img/supabaseAuth.svg" alt="Image">
+              <img src="img/aside/big4.svg" alt="Image">
             </picture>
           </div>
-        </acticle>
-      </section>
+        </div>
+      </div>
     </div>
-  </section>
-  <section class="page__start-project start-project">
-    <section class="start-project__container">
+  </div>
+  <!-- $ -->
+  <div class="page__start-project start-project">
+    <div class="start-project__container">
       <h1 class="start-project__header apis-supabase__header">
         <span>Build in a weekend,</span>
         <span>scale to millions</span>
@@ -342,21 +349,21 @@
       <button class="start-project__button button">
         Start your project
       </button>
-    </section>
-  </section>
+    </div>
+  </div>
 </main>
 		<footer class="footer">
   <div class="footer__container">
     <div class="footer__small-container">
       <div class="footer__main main-footer">
         <div class="main-footer__logos logos">
-          <img class="logos__logo" src="img/Logo.svg" alt="Logo">
+          <img class="logos__logo" src="img/logos/Logo.svg" alt="Logo">
           <div class="logos__box">
             <a target="_blank" href="https://twitter.com/explore">
-              <img src="img/Twitter.svg" alt="Twitter">
+              <img src="img/social/Twitter.svg" alt="Twitter">
             </a>
             <a target="_blank" href="https://github.com/tbt-Denis">
-              <img src="img/GithubFooter.svg" alt="Github">
+              <img src="img/social/GithubFooter.svg" alt="Github">
             </a>
           </div>
         </div>
@@ -480,12 +487,10 @@
       <div class="footer__footer footer-footer">
         <span class="footer-footer__text">© Supabase Inc</span>
         <div class="footer-footer__theme theme-switch">
-          <!-- <img src="img/sun.svg" alt="Sun"> -->
           <input class="theme-switch__input" id="themeSwitch" name="theme-switch" type="checkbox">
           <label for="themeSwitch" class="theme-switch__label">
             <span></span>
           </label>
-          <!-- <img src="img/moon.svg" alt="Moon"> -->
         </div>
       </div>
     </div>
