@@ -154,32 +154,30 @@ button {
   position: sticky;
   top: 0;
   z-index: 100;
-  height: 54px;
   background-color: inherit;
 }
-@media (max-width: 1200px) {
-  .header {
-    height: calc(
-				45px + 9 *
-					((100vw - 320px) / 880)
-			);
-  }
-}
-.header__container {
+.header__small-container {
+  display: flex;
   padding-top: 0.625rem;
   gap: 20px;
+  height: 64px;
+  align-items: center;
 }
 @media (max-width: 1200px) {
-  .header__container {
+  .header__small-container {
     gap: calc(
 				8px + 12 *
 					((100vw - 320px) / 880)
 			);
   }
 }
-.header__small-container {
-  display: flex;
-  align-items: center;
+@media (max-width: 1200px) {
+  .header__small-container {
+    height: calc(
+				45px + 19 *
+					((100vw - 320px) / 880)
+			);
+  }
 }
 .header__navigation {
   display: flex;
